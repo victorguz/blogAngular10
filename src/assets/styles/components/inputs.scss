@@ -1,0 +1,17 @@
+input[type="text"],
+input[type="password"],
+.input {
+  border-radius: $rounded;
+  border: none;
+  font-family: $paragraph-font;
+  font-weight: $krub-medium;
+  color: $black;
+  box-shadow: none;
+  background-color: $input-back;
+  width: fit-content;
+
+  line-height: 2.5rem !important;
+
+  padding: 0rem 1rem;
+  margin: 0.5rem;
+}

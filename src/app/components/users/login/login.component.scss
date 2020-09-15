@@ -1,0 +1,50 @@
+@import "../../../../assets/styles/variables.scss";
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+
+  > .content {
+    //display
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //box
+    border-radius: $rounded;
+    width: 500px;
+    padding: 40px;
+    //fonts
+    text-align: center;
+    //other styles
+    background-color: $white;
+
+    > p {
+      margin: 20px 0px;
+      max-width: 350px;
+    }
+
+    > .google-button,
+    .facebook-button {
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .facebook-button{
+        background-color: $white;
+        border: 1px #707070 solid;
+    }
+
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > input,
+      button {
+        min-width: 250px;
+      }
+    }
+  }
+}

@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/styles/variables.scss";
+@import "assets/styles/components/buttons.scss";
+@import "assets/styles/components/inputs.scss";
+@import "assets/styles/components/images.scss";
+@import "assets/styles/components/cards.scss";
+@import "assets/styles/components/others.scss";
+@import "assets/styles/components/material-angular.scss";
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $light-back;
+  font-family: $paragraph-font;
+  font-style: normal;
+  font-weight: $krub-regular;
+  position: relative;
+}
+.section {
+  width: 100%;
+  padding: 30px 100px;
+
+  //Media queries
+
+  @media (max-width: 1440px) {
+    padding: 30px 150px;
+  }
+  @media (max-width: 992px) {
+    padding: 100px 80px;
+  }
+  @media (max-width: 768px) {
+    padding: 80px 50px;
+  }
+  @media (max-width: 600px) {
+    padding: 50px 30px;
+  }
+  @media (max-width: 480px) {
+    padding: 30px 30px;
+  }
+
+  article .content, .content {
+    max-width: 1440px;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  color: #3D3D3D;
+}
+
+html,
+body {
+  height: 100%;
+}

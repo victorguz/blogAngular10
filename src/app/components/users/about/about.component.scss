@@ -1,0 +1,209 @@
+@import "../../../../assets/styles/variables.scss";
+
+.container {
+  display: flex;
+  gap: 100px;
+
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 27.0625rem; //433px
+    .header {
+      img {
+        min-height: 325px;
+        min-width: 325px;
+
+        max-height: 325px;
+        max-width: 325px;
+      }
+    }
+    .education,
+    .qualifications {
+      width: 100%;
+      .divisor {
+        hr {
+          width: 50px;
+        }
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+          width: 100%;
+          h3 {
+            font-size: 1.9375rem;
+            font-weight: $krub-semibold;
+          }
+          p {
+            font-weight: $krub-semibold;
+            font-size: 1.4375rem;
+            color: $gray;
+          }
+          span {
+            font-weight: $krub-regular;
+            font-size: 1.1875rem;
+          }
+          div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1rem;
+            hr {
+              background-color: $primary;
+              width: 2rem;
+              margin: 0rem 1rem 0rem 0rem;
+            }
+            button {
+              font-size: 0.9375rem;
+              line-height: 0.9375rem !important;
+            }
+          }
+        }
+      }
+    }
+
+    .qualifications {
+      .divisor {
+        hr {
+          width: 50px;
+        }
+        h2 {
+          font-size: 1.875rem;
+        }
+      }
+    }
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .card {
+        width: 100%;
+        height: 325px;
+        .section-title {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 1rem;
+          h1 {
+            font-size: 3.0625rem;
+            font-weight: $krub-semibold;
+          }
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            hr {
+              width: 42px;
+            }
+            h2 {
+              color: $gray;
+              font-size: 2.625rem;
+              font-weight: $krub-medium;
+            }
+          }
+        }
+        p {
+          font-size: 1.625rem;
+          color: $black;
+        }
+      }
+    }
+
+    .experiences {
+      .divisor {
+        hr {
+          width: 120px;
+        }
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .card-content {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          img {
+            object-fit: cover;
+            border-radius: $rounded;
+            width: 182px;
+            height: 218px;
+            margin-right: 1rem;
+          }
+          div {
+            .section-title {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin-bottom: 1rem;
+
+              h2 {
+                font-size: 2.125rem;
+                font-weight: $krub-semibold;
+              }
+              div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                hr {
+                  width: 42px;
+                }
+                h3 {
+                  color: $gray;
+                  font-size: 1.6875rem;
+                  font-weight: $krub-medium;
+                }
+              }
+            }
+            p {
+              font-size: 1.3125rem;
+              color: $black;
+            }
+          }
+        }
+        .divisor {
+          display: flex;
+          flex-direction: row;
+          // .mat-button span {
+          //   font-size: 3rem;
+          //   line-height: 3rem;
+          // }
+        }
+      }
+    }
+  }
+
+  article div .divisor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+    hr {
+      width: 30px;
+    }
+    h2 {
+      font-weight: $krub-bold;
+      font-size: 2.5rem;
+    }
+    // button {
+    //   font-size: 2.5rem !important;
+    // }
+  }
+}
