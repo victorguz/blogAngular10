@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/styles/variables.scss";
+@import "assets/styles/components/material-angular.scss";
+@import "assets/styles/components/bootstrap.scss";
 @import "assets/styles/components/buttons.scss";
 @import "assets/styles/components/inputs.scss";
 @import "assets/styles/components/images.scss";
 @import "assets/styles/components/cards.scss";
-@import "assets/styles/components/others.scss";
-@import "assets/styles/components/material-angular.scss";
+@import "assets/styles/components/scrollbar";
 
 * {
   box-sizing: border-box;
@@ -22,50 +23,128 @@ body {
   font-style: normal;
   font-weight: $krub-regular;
   position: relative;
-}
-.section {
-  width: 100%;
-  padding: 30px 100px;
-
-  //Media queries
-
-  @media (max-width: 1440px) {
-    padding: 30px 150px;
-  }
-  @media (max-width: 992px) {
-    padding: 100px 80px;
-  }
-  @media (max-width: 768px) {
-    padding: 80px 50px;
-  }
-  @media (max-width: 600px) {
-    padding: 50px 30px;
-  }
-  @media (max-width: 480px) {
-    padding: 30px 30px;
-  }
-
-  article .content, .content {
-    max-width: 1440px;
-  }
-}
-img {
-  max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  padding: 0;
-  margin: 0;
-  color: #3D3D3D;
-}
-
-html,
-body {
   height: 100%;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $krub-semibold;
+    padding: 0;
+    margin: 0;
+    color: $black-font;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    color: $black-font;
+  }
+  .section {
+    width: 100%;
+    // padding: 30px;
+    display: flex;
+    justify-content: center;
+
+    article .content,
+    .content,.container {
+      max-width: 1920px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    //Media queries
+    @media (max-width: 1640px) {
+      font-size: 2.8rem;
+    }
+    @media (max-width: 1440px) {
+      font-size: 2.6rem;
+    }
+    @media (max-width: 1200px) {
+      font-size: 2.4rem;
+    }
+    @media (max-width: 992px) {
+      font-size: 2.2rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.9rem;
+    }
+    @media (max-width: 480px) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 360px) {
+      font-size: 1.7rem;
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+    @media (max-width: 1640px) {
+      font-size: 2.3rem;
+    }
+    @media (max-width: 1440px) {
+      font-size: 2.1rem;
+    }
+    @media (max-width: 1200px) {
+      font-size: 1.9rem;
+    }
+    @media (max-width: 992px) {
+      font-size: 1.7rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    @media (max-width: 1640px) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 1440px) {
+      font-size: 1.7rem;
+    }
+    @media (max-width: 1200px) {
+      font-size: 1.6rem;
+    }
+    @media (max-width: 992px) {
+      font-size: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.3rem;
+    }
+    @media (max-width: 480px) {
+      font-size: 1.2rem;
+    }
+  }
+  h4 {
+    font-size: 1.7rem;
+    @media (max-width: 1640px) {
+      font-size: 1.6rem;
+    }
+    @media (max-width: 1440px) {
+      font-size: 1.4rem;
+    }
+    @media (max-width: 1200px) {
+      font-size: 1.3rem;
+    }
+  }
+  h5 {
+    font-size: 1.4rem;
+    @media (max-width: 1640px) {
+      font-size: 1.35rem;
+    }
+    @media (max-width: 1440px) {
+      font-size: 1.3rem;
+    }
+  }
+  h6 {
+    font-size: 1rem;
+  }
 }

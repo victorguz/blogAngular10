@@ -1,152 +1,230 @@
 <app-navbar></app-navbar>
 
-<section class="section container">
-  <article class="first">
-    <div class="header">
-      <img
-        class="img-circle"
-        src="/assets/uploads/users/user1.jpg"
-        alt="user-1"
-      />
-    </div>
+<header class="section header">
+  <article class="container">
+    <div class="row card">
+      <div class="col-sm-6 col-md-4 col-xl-3 userimg">
+        <button mat-icon-button (click)="prevPhoto()">
+          <span class="material-icons"> keyboard_arrow_left </span>
+        </button>
+        <img
+          *ngIf="photo == 0"
+          class="img-circle"
+          src="/assets/uploads/about/me/me.jpg"
+          alt="me"
+        />
+        <img
+          *ngIf="photo == 1"
+          class="img-circle"
+          src="/assets/uploads/about/me/me1.jpg"
+          alt="me"
+        />
+        <img
+          *ngIf="photo == 2"
+          class="img-circle"
+          src="/assets/uploads/about/me/me2.jpg"
+          alt="me"
+        />
+        <img
+          *ngIf="photo == 3"
+          class="img-circle"
+          src="/assets/uploads/about/me/me3.jpg"
+          alt="me"
+        />
+        <button mat-icon-button (click)="nextPhoto()">
+          <span class="material-icons"> keyboard_arrow_right </span>
+        </button>
+      </div>
 
-    <div class="education">
+      <div class="col-sm-6 col-md-8 col-xl-9 presentation">
+        <div class="title divisor divisor-left">
+          <h1>Victor Guzmán Berrio</h1>
+          <div>
+            <hr />
+            <h3>Jr Developer</h3>
+          </div>
+        </div>
+        <p class="profile">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          voluptatum nam ad maiores architecto iure consequatur hic facere aut
+          consectetur, sequi corporis repudiandae eius odio voluptatem! Dolore
+          fugit commodi in.
+        </p>
+        <div class="skills">
+          <h6>Programación</h6>
+          <div class="slide">
+            <span class="chip">
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg"
+                alt="Angular"
+              />
+              Angular
+            </span>
+            <span class="chip">
+              <img
+                src="https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png"
+                alt="java"
+              />
+              Java
+            </span>
+            <span class="chip">
+              <img
+                src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/2132470731553750209-512.png"
+                alt="firebase"
+              />
+              PHP
+            </span>
+            <span class="chip">
+              <img
+                src="https://cursosdedesarrollo.com/wp-content/uploads/2019/08/Mysql-dolphin-square.svg.png"
+                alt="mysql"
+              />
+              MySQL
+            </span>
+            <span class="chip">
+              <img
+                src="https://img.icons8.com/color/452/firebase.png"
+                alt="firebase"
+              />
+              Firebase
+            </span>
+            <span class="chip">
+              <img
+                src="https://www.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png"
+                alt="CSS"
+              />
+              CSS
+            </span>
+            <span class="chip">
+              <img
+                src="https://jenifercoila.github.io/Portfolio-Jeni/src/img/bootstrap.png"
+                alt="Bootstrap"
+              />
+              Bootstrap
+            </span>
+          </div>
+        </div>
+        <div class="skills">
+          <h6>Diseño</h6>
+          <div class="slide">
+
+            <span class="chip">
+              <img
+                src="https://lh3.googleusercontent.com/kaox1VteLsWAuNxPxhm8t4llaoyFhxzDjo9g4Hdf92bKdT_Sn6Yrdku6rApuc5ktirw"
+                alt="xd"
+              />
+              Adobe XD
+            </span>
+
+            <span class="chip">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1051px-Adobe_Illustrator_CC_icon.svg.png"
+                alt="Illustrator"
+              />
+              Adobe Illustrator
+            </span>
+            <span class="chip">
+              <img
+                src="https://icon-library.com/images/ux-design-icon/ux-design-icon-8.jpg"
+                alt="ux-ui"
+              />
+              UX/UI Design
+            </span>
+          </div>
+        </div>
+        <div class="skills">
+          <h6>Lenguajes</h6>
+          <div class="slide">
+            <span class="chip">
+              <img
+                src="https://www.festivalclaca.cat/imgfv/b/122-1220550_cono-con-bandera-de-colombia-flag.png"
+                alt="espanol-colombia"
+              />
+              Español Nativo
+            </span>
+            <span class="chip">
+              <img
+                src="https://www.icbf.gov.co/sites/default/files/united-states.png"
+                alt="american-english"
+              />
+              Inglés B1
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End row -->
+  </article>
+</header>
+
+<section class="section info">
+  <article class="row container">
+    <div class="col-sm-6 col-md-5 col-xl-3 education">
       <div class="divisor">
         <hr />
         <h2>Educación</h2>
         <hr />
       </div>
 
-      <div class="card first">
+      <div class="card primary">
         <div>
-          <h3>Ingeniería de Sistemas</h3>
-          <p>Universidad Simón Bolívar</p>
+          <div class="title divisor divisor-left">
+            <h5>Ingeniería de Sistemas</h5>
+            <h6>Universidad Simón Bolívar</h6>
+          </div>
+
           <span>Cursando 9° semestre</span>
-          <div class="text-primary">
-            <hr />
-            <button mat-button>Logros</button>
-            <button mat-button>Cualificaciones</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="qualifications">
-      <div class="divisor">
-        <hr />
-        <h2>Cualificaciones</h2>
-        <hr />
-      </div>
-
-      <div class="card second">
-        <div>
-          <h3>Formación básica para docencia universitaria</h3>
-          <p>Universidad Simón Bolívar</p>
-          <span>Hace 1 año</span>
-          <div class="text-primary">
-            <hr />
-            <button mat-button>Logros</button>
-            <button mat-button>Cualificaciones</button>
-          </div>
-        </div>
-
-        <div>
-          <h3>Desarrollador Frontend</h3>
-          <p>Fundación Carlos Slim</p>
-          <span>Hace 8 meses</span>
-          <div class="text-primary">
-            <hr />
-            <button mat-button>Logros</button>
-            <button mat-button>Cualificaciones</button>
-          </div>
-        </div>
-
-        <div>
-          <h3>Desarrollador Angular</h3>
-          <p>Udemy</p>
-          <span>Hace 9 meses</span>
-          <div class="text-primary">
-            <hr />
-            <button mat-button>Logros</button>
-            <button mat-button>Cualificaciones</button>
-          </div>
-        </div>
-
-        <div>
-          <h3>Técnico en reparación y mantenimiento de computadores</h3>
-          <p>Fundación Carlos Slim</p>
-          <span>Hace 8 meses</span>
-          <div class="text-primary">
-            <hr />
-            <button mat-button>Logros</button>
-            <button mat-button>Cualificaciones</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <article class="second">
-    <div class="header">
-      <div class="card presentation">
-        <div class="section-title">
-          <h1>Victor Guzmán</h1>
-          <div>
-            <hr />
-            <h2>Desarrollador Jr</h2>
-          </div>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr.
-        </p>
-      </div>
-    </div>
-
-    <div class="experiences">
-      <div class="divisor">
-        <hr />
-        <h2>Experiencias</h2>
-        <hr />
-      </div>
-
-      <div class="card experience">
-        <div class="card-content">
-          <img
-            src="https://www.tithink.com/wp-content/uploads/2018/05/practicas-desarollo-software.jpeg"
-            alt="software-developer"
-          />
-          <div>
-            <div class="section-title">
-              <h2>Software Developer / Desarrollador</h2>
-              <div>
-                <hr />
-                <h3>Actualmente</h3>
-              </div>
+          <div class="buttons text-primary divisor divisor-left">
+            <div>
+              <hr />
+              <a>Logros</a>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et.
-            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divisor">
+        <hr />
+        <h3>Cualificaciones</h3>
+        <hr />
+      </div>
+
+      <div class="card secondary">
+        <div>
+          <div class="title divisor divisor-left">
+            <h4>Desarrollador Frontend</h4>
+            <h6>Fundación Carlos Slim</h6>
+          </div>
+
+          <span>Hace 9 meses</span>
+
+          <div class="buttons text-primary divisor divisor-left">
+            <div>
+              <hr />
+              <a class="button-expandible">Logros</a>
+            </div>
           </div>
         </div>
 
-        <div class="divisor text-primary">
-          <hr />
-          <button mat-button class="buttons active">Logros</button>
-          <button mat-button class="buttons">Actividades</button>
-          <button mat-button class="buttons">Cualificaciones</button>
-          <hr />
+        <hr />
+
+        <div>
+          <div class="title divisor divisor-left">
+            <h4>Curso de Angular</h4>
+            <h6>Udemy</h6>
+          </div>
+
+          <span>Hace 1 año</span>
+
+          <div class="buttons text-primary divisor divisor-left">
+            <div>
+              <hr />
+              <a class="button-expandible">Logros</a>
+            </div>
+          </div>
         </div>
+        <span class="chip">Ver más</span>
       </div>
     </div>
   </article>

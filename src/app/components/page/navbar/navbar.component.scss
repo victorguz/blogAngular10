@@ -3,18 +3,16 @@
 .navbar {
   position: sticky;
   background-color: $white;
-  padding: 0px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .content {
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0rem;
-    width: 100vw;
 
     @media (max-width: 1440px) {
       padding: 1rem 3rem;
@@ -25,24 +23,7 @@
     @media (max-width: 768px) {
       padding: 1rem 1.5rem;
     }
-    .brand-link {
-      font-family: $brand-font;
-      font-weight: $brand-weight;
-      color: $black;
-      font-size: 2.5rem;
-      margin-right: 1rem;
-
-      @media (max-width: 1440px) {
-        font-size: 2.3rem;
-        margin-right: 0rem;
-      }
-      @media (max-width: 992px) {
-        font-size: 2.1rem;
-      }
-      @media (max-width: 768px) {
-        font-size: 1.9rem;
-      }
-    }
+    
     .collapsable {
       align-items: center;
       justify-content: space-between;
@@ -53,6 +34,8 @@
       @media (max-width: 992px) {
         display: none;
       }
+
+      
 
       div {
         display: flex;
@@ -66,9 +49,31 @@
 
     .oncollapse {
       display: none;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
       @media (max-width: 992px) {
         display: flex;
       }
+    }
+  }
+  
+  .brand-link {
+    font-family: $brand-font;
+    font-weight: $brand-weight;
+    color: $black;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+
+    @media (max-width: 1440px) {
+      font-size: 2.3rem;
+      margin-right: 0rem;
+    }
+    @media (max-width: 992px) {
+      font-size: 2.1rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.9rem;
     }
   }
 }

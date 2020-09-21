@@ -1,23 +1,20 @@
 <section class="section navbar">
-  <div class="content">
-    <a routerLink="'/'" routerLinkActive="active" class="brand-link"
-      >Ingeblog</a
-    >
-
+  <div class="container">
     <div class="collapsable">
-      <input
-        type="text"
-        name="search"
-        id="search"
-        placeholder="Encuentra algo aquí..."
-      />
+      <div>
+        <a routerLink="'/'" routerLinkActive="active" class="brand-link">
+          Ingeblog
+        </a>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Encuentra algo aquí..."
+        />
+      </div>
 
       <div>
-        <button
-          mat-button
-          class="bg-primary-hover"
-          [routerLink]="['/login']"
-        >
+        <button mat-button class="bg-primary-hover" [routerLink]="['/login']">
           Log in or Create Account
         </button>
         <button
@@ -32,22 +29,26 @@
     </div>
 
     <div class="oncollapse">
+      <a routerLink="'/'" routerLinkActive="active" class="brand-link">
+        Ingeblog
+      </a>
+
       <button mat-icon-button [matMenuTriggerFor]="menu">
         <span class="material-icons"> more_vert </span>
       </button>
-
-      <mat-menu #menu="matMenu">
-        <button
-          mat-menu-item
-          [routerLink]="['/login']"
-          routerLinkActive="active"
-        >
-          <span class="material-icons"> account_circle </span>
-          Iniciar sesión
-        </button>
-
-        <button mat-menu-item>Item 2</button>
-      </mat-menu>
     </div>
+    
+    <mat-menu #menu="matMenu">
+      <button
+        mat-menu-item
+        [routerLink]="['/login']"
+        routerLinkActive="active"
+      >
+        <span class="material-icons"> account_circle </span>
+        Iniciar sesión
+      </button>
+
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
   </div>
 </section>
