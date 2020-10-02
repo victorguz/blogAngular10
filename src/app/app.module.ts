@@ -17,7 +17,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 //Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/users/login/login.component';
-import { NavbarComponent } from './components/page/navbar/navbar.component';
+import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { AboutComponent } from './components/users/about/about.component';
 
 @NgModule({
